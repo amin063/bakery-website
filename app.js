@@ -593,7 +593,7 @@ function showBreads(data) {
     breads.innerHTML = '';
     data.forEach((item, index) => {
         breads.innerHTML += `  <div class="col-lg-3 col-md-3 col-12 mb-5">
-                        <div class="item">
+                        <div class="item mx-4">
                             <div class="item-img">
     <img src=${item.img} onerror="this.src = './assets/images/logo.png'">
                                 <div class="item-name">${item.name}</div>
