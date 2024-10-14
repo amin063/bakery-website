@@ -620,7 +620,7 @@ function showBreads(data) {
 
 function filterData() {
     filteredData = data.filter(item => {
-        const inputResult = item.name.toLowerCase().includes(input.value);
+        const inputResult = item.name.toLowerCase().includes(input.value.toLowerCase());
         const priceResult = Number(item.price) > Number(priceFilter.value);
         const rateResult = Number(item.rate) > Number(rateFilter.value);
         return inputResult && priceResult && rateResult
