@@ -592,7 +592,7 @@ function addToBasket(item) {
 function showBreads(data) {
     breads.innerHTML = '';
     data.forEach((item, index) => {
-        breads.innerHTML += `  <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 mb-5">
+        breads.innerHTML += `  <div class="col-xxl-3 col-lg-4 col-md-6 col-12 mb-5">
                         <div class="item mx-4">
                             <div class="item-img">
     <img src=${item.img} onerror="this.src = './assets/images/logo.png'">
